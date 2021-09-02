@@ -1,0 +1,13 @@
+.menu__link {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 17px;
+   color: white;
+}
+
+.menu__link:hover {
+   color: #e24e4e;
+   text-decoration: none;
+   border-top: 2px solid #e24e4e;
+   padding-top: 0.8rem;
+}

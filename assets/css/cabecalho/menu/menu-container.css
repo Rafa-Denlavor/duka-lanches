@@ -1,0 +1,11 @@
+.menu__container, .menu__container--cardapio {
+   align-items: center;
+   display: flex;
+   justify-content: space-evenly;
+   padding: 1rem;
+}
+
+.menu__container--cardapio {
+   background-color: #111;
+   padding: 1.5rem 1rem 3rem 1rem;
+}

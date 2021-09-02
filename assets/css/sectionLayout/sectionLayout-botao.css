@@ -1,0 +1,11 @@
+.sectionLayout__botao {
+   background-color: #e24e4e;
+   padding: 0.7em;
+   border: 2px solid white;
+   cursor: pointer;
+   margin-top: 0.5rem;
+}
+
+.sectionLayout__botao:hover {
+   background-color: #d10303;
+}
