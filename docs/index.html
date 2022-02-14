@@ -1,176 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="apple-touch-icon" sizes="180x180" href="img/icon/android-chrome-192x192.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
-   <link rel="manifest" href="site.webmanifest">
-   <!--CSS-->
-   <link rel="stylesheet" href="css/base.css">
-   <!--CABECALHO-->
-   <link rel="stylesheet" href="css/cabecalho/cabecalho/cabecalho.css">
-   <link rel="stylesheet" href="css/cabecalho/cabecalho/cabecalho-logo.css">
-   <!--CABECALHO/MENU-->
-   <link rel="stylesheet" href="css/cabecalho/menu/menu-container.css">
-   <link rel="stylesheet" href="css/cabecalho/menu/menu-lista.css">
-   <link rel="stylesheet" href="css/cabecalho/menu/menu-item.css">
-   <link rel="stylesheet" href="css/cabecalho/menu/menu-link.css">
-   <!--CABECALHO/PARCEIROS-->
-   <link rel="stylesheet" href="css/cabecalho/parceiros/parceiros-descricao.css">
-   <link rel="stylesheet" href="css/cabecalho/parceiros/parceiros-ilustracao.css">
-   <!--SECTION LAYOUT-->
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-container.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-container--conteudo.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-icone.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-titulo.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-descricao.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-botao.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-link.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-container--ilustracao.css">
-   <link rel="stylesheet" href="css/sectionLayout/sectionLayout-ilustracao.css">
-   <!--HORARIO-->
-   <link rel="stylesheet" href="css/horario/horario-tabela.css">
-   <link rel="stylesheet" href="css/horario/horario-th.css">
-   <link rel="stylesheet" href="css/horario/horario-td.css">
-   <title>Duka Lanches | Mata X Fomes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <title>Duka Lanches | Mata X fomes</title>
 </head>
-<body>
-
-   <header id="cabecalho">
-      <div class="menu__container">
-         <picture>
-            <img src="img/logo.png" alt="" class="cabecalho__logo">
-         </picture>
-         <nav>
-            <ul class="menu__lista">
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Home</a>
-               </li>
-               <li class="menu__item">
-                  <a href="cardapio.html" class="menu__link">Cardápio</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Sobre nós</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Horário</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Contatos</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Localização</a>
-               </li>
-            </ul>
-         </nav>
-         <div class="cabecalho__parceiros">
-            <p class="parceiros__descricao">Peça já através do:</p>
-            <picture>
-               <img src="img/ifood.png" alt="" class="parceiros__ilustracao">
-               <img src="img/uber-eats.png" alt="" class="parceiros__ilustracao">
-               <img src="img/rappi.png" alt="" class="parceiros__ilustracao">
-            </picture>  
-         </div>
+<body class="background-color-especial">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light background-color-especial">
+      <div class="container-fluid m-3">
+        <a class="navbar-brand text-white" href="index.html"><img src="img/logo.png" alt="" class="d-inline-block align-top tamanho-logo"></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="cardapio.html">Cardápio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="horario.html">Horário</a></li>
+          </ul>
+          <form class="d-flex text-white">
+            <button style="display: none;" class="btn btn-outline-success" type="submit">Login</button>
+          </form>
+        </div>
       </div>
-   </header>
+    </nav>
+  </header>
+  <main class="background-color-especial">
+    <section id="slogan" class="section-posicao">
+      <h1 class="h1-slogan">Sua fome pede<br>Duka Lanches</h1>
+    </section>
+    <section id="capa">
+      <div class="container-capa">
+        <video class="video-animacao" preload="auto" loop autoplay muted="true">
+        <source src="video/animacao-hamburguer.mp4" type="video/mp4">
+      </div>
+    </section>
 
-   <main>
-      <!--CARDAPIO-->
-      <section id="cardapio" class="sectionLayout__container">
-         <div class="sectionLayout__container--conteudo">
-            <picture>
-               <img src="img/icone-hamburguer.svg" alt="" class="sectionLayout__icone">
-            </picture>
-            <h2 class="sectionLayout__titulo">Cardápio</h2>
-            <p class="sectionLayout__descricao">Venha conhecer os nossos mais diversos lanches, combos e porções. Que tal pedir ainda hoje?</p>
-            <button class="sectionLayout__botao">
-               <a href="" class="sectionLayout__link">Veja o cardápio</a>
-            </button>
-         </div>
-         <div class="sectionLayout__container--ilustracao">
-            <picture>
-               <img src="https://images.pexels.com/photos/3738762/pexels-photo-3738762.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="sectionLayout__ilustracao">
-            </picture>
-         </div>
-      </section>
-      <!--SOBRE NOS-->
-      <section id="sobreNos" class="sectionLayout__container">
-         <div class="sectionLayout__container--ilustracao">
-            <picture>
-               <img src="https://images.pexels.com/photos/3738755/pexels-photo-3738755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="sectionLayout__ilustracao">
-            </picture>
-         </div>
-         <div class="sectionLayout__container--conteudoRight">
-            <picture>
-               <img src="img/icone-sobre-nos.svg" alt="" class="sectionLayout__icone">
-            </picture>
-            <h2 class="sectionLayout__titulo">Sobre nós</h2>
-            <p class="sectionLayout__descricao">Inaugurada em 21 de dezembro de 2020 por Andressa Ferreira, o Duka Lanches traz a proposta de que lanche grande e saboroso não precisa te levar a falência.</p>
-            <p class="sectionLayout__descricao">Conta com um cardápio diversificado com diversos hamburgueres, combos normais ou em caixas de pizza e porções.</p>
-            <p class="sectionLayout__descricao">Entre os mais pedidos temos o X-Bacon e Monster Salad, porém como grande destaque temos o famoso X Fome: o maior e mais querido lanche da região!</p>
-         </div>
-      </section>
-      <!--HORARIO-->
-      <section id="horario" class="sectionLayout__container">
-         <div class="sectionLayout__container--conteudo">
-            <picture>
-               <img src="img/icone-horario.svg" alt="" class="sectionLayout__icone">
-            </picture>
-            <h2 class="sectionLayout__titulo">Horário de Atendimento</h2>
-            <p class="sectionLayout__descricao">Horários flexíveis com possibilidade de atendimento na madrugada dos finais de semana.<br>Entre em contato para mais informações!</p>
-            <table class="horario__tabela">
-               <thead>
-                 <tr>
-                   <th class="horario__th">Dia</th>
-                   <th class="horario__th">Horário</th>
-                 </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td class="horario__td--fechado">Seg</td>
-                     <td class="horario__td--fechado">Fechado!</td>
-                  </tr>
-                 <tr>
-                   <td class="horario__td">Ter e Qua</td>
-                   <td class="horario__td">11h ~ 15h | 18h ~ 23h</td>
-                 </tr>
-                 <tr>
-                   <td class="horario__td">Quin e Sex</td>
-                   <td class="horario__td">11h ~ 15h | 18h ~ 00h</td>
-                 </tr>
-                 <tr>
-                   <td class="horario__td">Sab e Dom</td>
-                   <td class="horario__td">18h ~ 00h</td>
-                 </tr>
-               </tbody>
-             </table>
-         </div>
-         <div class="sectionLayout__container--ilustracao">
-            <picture>
-               <img src="https://images.pexels.com/photos/1247755/pexels-photo-1247755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="sectionLayout__ilustracao">
-            </picture>
-         </div>
-      </section>
-      <!--CONTATOS-->
-      <section id="contatos" class="sectionLayout__container">
-         <div class="sectionLayout__container--ilustracao">
-            <picture>
-               <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="sectionLayout__ilustracao">
-            </picture>
-         </div>
-         <div class="sectionLayout__container--conteudoRight">
-            <picture>
-               <img src="img/icone-contatos.svg" alt="" class="sectionLayout__icone">
-            </picture>
-            <h2 class="sectionLayout__titulo">Contatos</h2>
-            <p class="sectionLayout__descricao">Para mais informações e para ficar por dentro das novidades, siga nossas redes sociais!</p>
-         </div>
-      </section>
+    <hr class="hr">
 
-   </main>
-   
+    <section id="homeCardapio" class="section-posicao">
+      <figure><img class="imagem-cardapio" src="img/home-cardapio.jpg" alt=""></figure>
+      <h2 class="titulo-padrao">O que desejo pedir?</h2>
+      <p class="descricao">Acesse agora mesmo nosso cardápio e faça o seu pedido de forma fácil e simples!</p>
+      <div class="container-botao">
+        <button type="submit" class="botao"><a href="cardapio.html">Veja o cardápio</a></button>
+      </div>
+    </section>  
+
+    <hr class="hr">
+
+    <section id="sobre" class="section-posicao">
+      <h2 class="titulo-padrao estilo-especial">Quando surgiu?</h2>
+      <div class="container-imagem-sobre">
+        <picture>
+          <img src="img/combo-batata.jpeg" class="imagem-sobre" alt="...">
+          <img src="img/combo-mega.jpeg" class="imagem-sobre" alt="">
+          <img src="img/x-dog.jpeg" class="imagem-sobre" alt="">
+        </picture>
+      </div>
+      <div class="container-texto">
+        <p class="descricao">Inaugurada em 21 de dezembro de 2020 por Andressa Ferreira, o Duka Lanches traz a proposta de que lanche grande e saboroso não precisa te levar a falência.
+        <p class="descricao">Conta com um cardápio variado com hamburgueres, combos e porções diversificadas. Há até mesmo combos infantis!</p>
+        <p class="descricao">Entre os mais pedidos temos o X-Bacon e Monster Salad, porém como grande destaque temos o famoso X Fome: o maior e mais querido lanche da região, com 2 pares de pão de hambúrguer, 2 hambúrgueres de 90g, bacon, calabresa, ovo, presunto, mussarela, queijo cheddar, alface, tomate, cebola e muito mais!
+        </p>
+      </div>
+    </section>
+
+    <hr class="hr">
+
+    <section id="estabelecimento" class="section-posicao"> 
+      <h2 class="titulo-padrao estilo-especial">Estabelecimento</h2>
+      <p class="descricao-localizacao">Hamburgueria localizada na zona leste de São Paulo para retirada e delivery.</p>
+      <div>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.736519253034!2d-46.51644938454393!3d-23.61378056941635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce672323c9dcaf%3A0x39184970b1278a85!2sDuka%20Lanches!5e0!3m2!1spt-BR!2sbr!4v1611790142109!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+
+     
+  </main>
+
+  <footer id="rodape">
+    <img class="imagem-rodape" src="img/logo.png" alt="">
+    <div class=redes-sociais>
+      <a href="#" target="_blank" rel="external">
+        <i class="fa fa-facebook-official link-none" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.instagram.com/duka.lanches/?hl=pt-br" target="_blank" rel="external">
+        <i class="fa fa-instagram link-none" aria-hidden="true"></i>
+      </a>
+      <a href="tel:+5511953628787" target="_blank" rel="external">
+        <i class="fa fa-whatsapp link-none" aria-hidden="true"></i>
+      </a>
+    </div>
+    <p class="texto-centralizado">&copy; 2021 Duka Lanches - Todos os direitos reservados </p>
+    <p class="texto-centralizado">CNPJ: 40.460.846/0001-29</p>
+  </footer>
+  
+  <script src="https://use.fontawesome.com/c14db14e52.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
 </body>
 </html>
+
+
+

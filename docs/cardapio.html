@@ -9,64 +9,47 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
   <link rel="manifest" href="json/site.webmanifest">
-  <!--CSS-->
   <link rel="stylesheet" href="css/base.css">
-  <!--CABECALHO-->
-  <link rel="stylesheet" href="css/cabecalho/cabecalho/cabecalho.css">
-  <link rel="stylesheet" href="css/cabecalho/cabecalho/cabecalho-logo.css">
-  <!--CABECALHO/MENU-->
-  <link rel="stylesheet" href="css/cabecalho/menu/menu-container.css">
-  <link rel="stylesheet" href="css/cabecalho/menu/menu-lista.css">
-  <link rel="stylesheet" href="css/cabecalho/menu/menu-item.css">
-  <link rel="stylesheet" href="css/cabecalho/menu/menu-link.css">
-  <!--CABECALHO/PARCEIROS-->
-  <link rel="stylesheet" href="css/cabecalho/parceiros/parceiros-descricao.css">
-  <link rel="stylesheet" href="css/cabecalho/parceiros/parceiros-ilustracao.css">
-  <!--CARDÁPIO-->
-  <link rel="stylesheet" href="css/cardapio/cardapio.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/cardapio.css">
     <title>Cardápio | Duka Lanches</title>
 </head>
 <body>
-    <header>
-      <div class="menu__container--cardapio">
-         <picture>
-            <img src="img/logo.png" alt="" class="cabecalho__logo">
-         </picture>
-         <nav>
-            <ul class="menu__lista">
-               <li class="menu__item">
-                  <a href="" class="menu__link">Home</a>
-               </li>
-               <li class="menu__item">
-                  <a href="cardapio.html" class="menu__link">Cardápio</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Sobre nós</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Horário</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Contatos</a>
-               </li>
-               <li class="menu__item">
-                  <a href="#" class="menu__link">Localização</a>
-               </li>
-            </ul>
-         </nav>
-         <div class="cabecalho__parceiros">
-            <p class="parceiros__descricao">Peça já através do:</p>
-            <picture>
-               <img src="img/ifood.png" alt="" class="parceiros__ilustracao">
-               <img src="img/uber-eats.png" alt="" class="parceiros__ilustracao">
-               <img src="img/rappi.png" alt="" class="parceiros__ilustracao">
-            </picture>  
-         </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light background-color-especial">
+      <div class="container-fluid m-3">
+        <a class="navbar-brand text-white" href="index.html"><img src="img/logo.png" alt="" class="d-inline-block align-top tamanho-logo"></a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="cardapio.html">Cardápio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" aria-current="page" href="horario.html">Horário</a></li>
+          </ul>
+          <form class="d-flex text-white">
+            <button style="display: none;" class="btn btn-outline-success" type="submit">Login</button>
+          </form>
+        </div>
       </div>
-   </header>
+    </nav>
+  </header>
 
   <main class="background-color-especial">
+    <section class="section-posicao">
+      <picture>
+        <img class="capa-cardapio" src="img/capa-cardapio.jpg" alt="">
+      </picture>
+      <p class="text-center pb-2">Temos diversos tipos de hamburgueres, combos e porções para você se deliciar.<br>Nos comprometemos  com o sabor, qualidade dos produtos e uma entrega ágil. Peça já o seu!</p>
+      <div class="container-botao">
+        <button type="submit" class="botao"><a href="tel:+5511953628787">Whatsapp</a></button>
+      </div>
 
+      <hr class="hr">
+
+      <h2 class="titulo-padrao">Hambúrgueres</h2>
+    </section>
     <section id="hamburgueres" class="container-fluid">
       <div class="row justify-content-center">
         <article class="card card-largura col-6 col-md-3 p-0 m-4">
@@ -245,6 +228,18 @@
   </main>
 
   <footer id="rodape">
+    <img class="imagem-rodape" src="img/logo.png" alt="">
+    <div class=redes-sociais>
+        <a href="#" target="_blank" rel="external">
+          <i class="fa fa-facebook-official link-none" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/duka.lanches/?hl=pt-br" target="_blank" rel="external">
+          <i class="fa fa-instagram link-none" aria-hidden="true"></i>
+        </a>
+        <a href="tel:+5511953628787" target="_blank" rel="external">
+          <i class="fa fa-whatsapp link-none" aria-hidden="true"></i>
+        </a>
+    </div>
     <p class="texto-centralizado">&copy; 2021 Duka Lanches - Todos os direitos reservados </p>
     <p class="texto-centralizado">CNPJ: 40.460.846/0001-29</p>
   </footer>
