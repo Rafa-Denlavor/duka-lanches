@@ -1,0 +1,22 @@
+.horario__tabela {
+    width: 90%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+ }
+
+ .horario__td, .horario__td--fechado {
+    padding: 0.7rem;
+    text-align: center;
+    background-color: #25692A;
+    font-weight: bold;
+ }
+ 
+ .horario__td--fechado {
+    background-color: #e24e4e;
+ }
+
+ .horario__th {
+    padding: 1rem;
+    background-color: white;
+    color: black;
+ }
